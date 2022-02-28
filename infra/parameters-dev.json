@@ -1,0 +1,8 @@
+{
+    "Parameters": {
+        "BucketName": "lambda-src",
+        "VersioningConfiguration": "Suspended",
+        "KMSMasterKeyId": "",
+        "Owner": "tg"
+    }
+}
