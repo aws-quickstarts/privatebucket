@@ -1,12 +1,12 @@
 AWSTemplateFormatVersion: 2010-09-09
 
-Description: Cria um bucket privado
+Description: Creates a private bucket
 
 Parameters:
 
   BucketName:
     Type: String
-    Default: lambda-src
+    Default: tg-private-bucket-123456
   
   VersioningConfiguration:
     Type: String
@@ -24,8 +24,7 @@ Resources:
   Bucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName:
-        Fn::Sub: [ "${AWS::AccountId}-${BucketName}", BucketName: !Ref BucketName ]
+      BucketName: !Ref BucketName
       AccessControl: Private
       PublicAccessBlockConfiguration:
         BlockPublicAcls: true

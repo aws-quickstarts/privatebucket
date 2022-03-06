@@ -1,4 +1,4 @@
 # Private Bucket
 
-Esse arquivo cria:
-- Um bucket privado;
+This project creates:
+- Private bucket
