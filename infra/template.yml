@@ -11,9 +11,6 @@ Parameters:
     Type: String
     Default: Suspended
 
-  KMSMasterKeyId:
-    Type: String
-
   Owner:
     Type: String
     Default: tg
